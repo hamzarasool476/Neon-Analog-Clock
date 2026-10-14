@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#070914" />
+  <meta name="description" content="A responsive neon analog clock built with HTML5, CSS3, and vanilla JavaScript." />
+  <title>Neon Analog Clock</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="page">
+    <section class="clock-card" aria-labelledby="page-title">
+      <div class="tech-badges" aria-label="Built with CSS, JavaScript and HTML">
+        <span class="tech-badge css-badge" aria-label="CSS">3</span>
+        <span class="tech-badge js-badge" aria-label="JavaScript">JS</span>
+        <span class="tech-badge html-badge" aria-label="HTML5">5</span>
+      </div>
+
+      <p class="eyebrow">FRONT-END MINI PROJECT</p>
+      <h1 id="page-title">Analog Clock</h1>
+      <p class="subtitle">A little glow. A lot of precision.</p>
+
+      <div class="clock-stage">
+        <div class="clock-halo" aria-hidden="true"></div>
+        <div class="clock-shell">
+          <div class="clock-bezel">
+            <div class="clock-face" role="img" aria-label="Live analog clock">
+              <div class="hour-markers" aria-hidden="true">
+                <span class="number n12">12</span>
+                <span class="number n1">1</span>
+                <span class="number n2">2</span>
+                <span class="number n3">3</span>
+                <span class="number n4">4</span>
+                <span class="number n5">5</span>
+                <span class="number n6">6</span>
+                <span class="number n7">7</span>
+                <span class="number n8">8</span>
+                <span class="number n9">9</span>
+                <span class="number n10">10</span>
+                <span class="number n11">11</span>
+              </div>
+              <div class="hand hour-hand" id="hour-hand"></div>
+              <div class="hand minute-hand" id="minute-hand"></div>
+              <div class="hand second-hand" id="second-hand"></div>
+              <div class="center-pin" aria-hidden="true"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="digital-time" id="digital-time" aria-live="off">00:00:00</div>
+      <p class="clock-caption"><span class="live-dot"></span> LIVE LOCAL TIME</p>
+      <div class="bottom-rule" aria-hidden="true"><span></span></div>
+      <p class="footer-note">DESIGNED WITH HTML <b>·</b> CSS <b>·</b> JAVASCRIPT</p>
+    </section>
+  </main>
+</body>
+</html>
